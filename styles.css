@@ -1,0 +1,192 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f1f1f1;
+  color: #111;
+}
+
+/* Fade In Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all .9s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+/* NAV -------------------------------------------------------- */
+
+.nav {
+  width: 100%;
+  padding: 18px 40px;
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 5px 15px rgba(0,0,0,.4);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: .2s;
+}
+
+.nav-links a:hover {
+  opacity: .6;
+}
+
+/* HERO -------------------------------------------------------- */
+
+.hero {
+  padding: 100px 40px;
+}
+
+.hero-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.accent {
+  color: #555;
+}
+
+.subtitle {
+  margin: 10px 0 20px 0;
+  color: #555;
+}
+
+.cta {
+  padding: 10px 20px;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: .3s;
+}
+
+.cta:hover {
+  transform: translateY(-3px);
+}
+
+/* IMAGE + 3D Hover -------------------------------------------- */
+
+.tilt {
+  transition: transform .3s ease;
+}
+
+.tilt:hover {
+  transform: perspective(600px) rotateX(7deg) rotateY(7deg) scale(1.03);
+}
+
+.hero-image img {
+  width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,.4);
+}
+
+/* CARDS -------------------------------------------------------- */
+
+.card {
+  background: #fff;
+  margin: 60px 40px;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(0,0,0,.2);
+}
+
+/* QUICK INFO BOX */
+
+.quick {
+  display: flex;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+/* GRID --------------------------------------------------------- */
+
+.grid-section {
+  margin: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 25px;
+}
+
+.small {
+  text-align: center;
+  padding: 20px;
+}
+
+/* SKILL BARS -------------------------------------------------- */
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.bar {
+  width: 100%;
+  height: 25px;
+  background: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.fill {
+  width: 0%;
+  height: 100%;
+  background: #333;
+  color: #fff;
+  text-align: right;
+  padding-right: 10px;
+  line-height: 25px;
+  transition: width 1.3s ease-in-out;
+}
+
+/* CONTACT ----------------------------------------------------- */
+
+.contact a {
+  color: #000;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER ------------------------------------------------------ */
+
+.footer {
+  text-align: center;
+  padding: 25px;
+  color: #555;
+}
